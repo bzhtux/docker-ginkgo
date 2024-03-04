@@ -5,7 +5,7 @@ ARG GOOS=linux
 ARG GOARCH=amd64
 ARG GOPATH=$HOME/go
 
-RUN apk add git make
+RUN apk add git make gcc libc-dev
 RUN adduser -s /bin/sh -u 10000 -D app --home /go
 RUN mkdir /.cache
 RUN mkdir /.config
