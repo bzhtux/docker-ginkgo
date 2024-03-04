@@ -6,7 +6,7 @@ ARG GOARCH=amd64
 ARG GOPATH=$HOME/go
 
 RUN apk add git make
-RUN adduser -s /bin/sh -u 10000 -D /go
+RUN adduser -s /bin/sh -u 10000 -D app --home /go
 RUN mkdir /.cache
 RUN mkdir /.config
 RUN mkdir -p /go/src
