@@ -1,12 +1,12 @@
 FROM golang:alpine
-LABEL maintainer="Yannick Foeillet <yfoeillet@vmware.com>"
+LABEL maintainer="Yannick Foeillet <bzhtux@gmail.com>"
 
 ARG GOOS=linux
 ARG GOARCH=amd64
 ARG GOPATH=$HOME/go
 
 RUN apk add git make
-RUN adduser -s /bin/sh -u 10000 -D /go
+RUN adduser -s /bin/sh -u 10000 -D /go ginkgo
 RUN mkdir /.cache
 RUN mkdir /.config
 RUN mkdir -p /go/src
