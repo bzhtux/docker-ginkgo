@@ -15,7 +15,7 @@ RUN chown -R 1000:1000 /.config
 RUN chown -R 1000:1000 /go
 USER 1000
 WORKDIR /go/src
-RUN go install github.com/onsi/ginkgo/v2/ginkgo@v2.15.0
+RUN go install github.com/onsi/ginkgo/v2/ginkgo@v2.20.2
 
 ENTRYPOINT ginkgo
 
